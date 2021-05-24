@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "IotEnrolmentTest": {
+      "commandName": "Project",
+      "commandLineArgs": "Muncie2DDepthLocations.csv Muncie2DDepthByTime.csv"
+    }
+  }
+}

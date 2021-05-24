@@ -1,0 +1,24 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Program_Start.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="Locations.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Update="gqc_dev_00.pfx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <PackageReference Include="Microsoft.Azure.Devices.Client" Version="1.*" />
+    <PackageReference Include="Microsoft.Azure.Devices.Provisioning.Transport.Mqtt" Version="1.*" />
+    <PackageReference Include="Microsoft.Azure.Devices.Provisioning.Transport.Amqp" Version="1.*" />
+    <PackageReference Include="Microsoft.Azure.Devices.Provisioning.Transport.Http" Version="1.*" />
+  </ItemGroup>
+</Project>

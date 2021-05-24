@@ -17,9 +17,9 @@ namespace ContainerDevice
     class Program
     {
         // Azure Device Provisioning Service (DPS) ID Scope
-        private static string dpsIdScope = "0ne002C8A9E";
+        private static string dpsIdScope = "";
         // Certificate (PFX) File Name
-        private static string certificateFileName = "gqc_dev_00.pfx";
+        private static string certificateFileName = "";
 
         // Certificate (PFX) Password
         private static string certificatePassword = "1234";
